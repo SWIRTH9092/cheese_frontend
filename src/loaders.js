@@ -15,7 +15,7 @@ export const cheesesLoader = async () => {
 //----------------------
 
 export const cheeseLoader = async ({params}) => {
-    const response = await fetch(URL + "/cheese" + params.id )
+    const response = await fetch(URL + "/cheese/" + params.id )
     const cheese = await response.json()
-    return cheese
+     return cheese
 }
