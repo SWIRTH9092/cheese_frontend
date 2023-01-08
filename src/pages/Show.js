@@ -24,6 +24,14 @@ function Show (props) {
                 <input type="input" name="image" placeholder="link for cheese image" />
                 <input type="submit" value={`update ${cheese.name}`} />
             </Form>
+            
+            <br></br>
+
+            <h2>Delete Cheese</h2>
+            <Form action={`/delete/${cheese._id}`} method="post">
+                <input type="submit" value ={`delete ${cheese.name}`} />
+            </Form>
+    
 
         </div>
     )
