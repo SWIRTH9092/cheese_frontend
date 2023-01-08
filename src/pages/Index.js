@@ -11,6 +11,7 @@ function Index (props) {
     //define list of cheeses from loader data
     const cheeses = useLoaderData();
 
+    
     return (
         <div>
             <h2>Create a Cheese</h2>
@@ -24,7 +25,7 @@ function Index (props) {
             <h2>Cheeses</h2>
                 {cheeses.map(cheese => (
                 <div key={cheese._id} className="cheese">
-                    <Link to={`/${cheese.id}`}>
+                    <Link to={`/${cheese._id}`}>
                         <h1>{cheese.name}</h1>
                     </Link>
                     <h3>Country of Origin: {cheese.countryOfOrigin}</h3>
