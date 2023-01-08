@@ -10,6 +10,7 @@ import App from "./App"
 import Index from "./pages/Index"
 import Show from "./pages/Show"
 import { cheesesLoader } from "./loaders"
+import { createAction } from "./actions"
 
 //---------------------------------------
 //   Router Paths
@@ -19,7 +20,7 @@ const router = createBrowserRouter(
             <Route path="/" element={<App />}>
                 <Route path="" element={<Index />} loader={cheesesLoader} />
                 <Route path=":id" element={<Show />} />
-                <Route path="create" />
+                <Route path="create" action={createAction} />
                 <Route path="update/:id" />
                 <Route path="delete/:id" />
             </Route>)
