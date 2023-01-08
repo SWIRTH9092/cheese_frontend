@@ -29,6 +29,9 @@ function Index (props) {
                     </Link>
                     <h3>Country of Origin: {cheese.countryOfOrigin}</h3>
                     <img src={cheese.image} alt={cheese.name} className="index-img-sz"/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </div>
                 ))}
         </div>
